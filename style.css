@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game { 
+    width: 500px;
+    height: 290px;
+    border: 1px solid grey;
+    border-bottom: 10px solid rgb(200, 93, 93);
+    padding: 10px 2px 0 10px;
+    margin-left: 25%;
+    margin-top:  100px;
+
+    -webkit-box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+    -moz-box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+    box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+
+    background-image: url("assets/cloud.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CARACKTER */
+#character {
+    width:  20px;
+    height:  50px;
+    position: relative;
+    top: 150px;
+
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+/* BLCK */
+#block {
+    width:  30px;
+    height:  30px;
+    position: relative;
+    top: 118px;
+    left: 480px;
+
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -22px;}
+}
+
+
+#title{
+    text-align: center;
+}
+
+#refresh { 
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30px;
+}
+
+#refresh_icon{
+    display: none;
+}
+
+#refresh_icon :hover{
+    -webkit-box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+    -moz-box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+    box-shadow: 9px 6px 28px 6px rgba(230,230,230,0.66);
+} 

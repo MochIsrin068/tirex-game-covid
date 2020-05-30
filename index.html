@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" onkeyup="jumpKeys(event)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tirex Game</title>
+</head>
+
+<body>
+    <div id="game">
+        <div>
+            <h2 id="title">HINDARI CORONA</h2>
+            <div id="refresh">
+                <img id="refresh_icon" src="assets/refresh.png"  style="width: 30px; height: 30px; cursor: pointer;" onclick="location.reload()"/>
+            </div>
+        </div>
+        <div id="character">
+            <img src="assets/run.png" style="width: 52px; height: 52px;" />
+        </div>
+        <div id="block">
+            <img src="assets/corona.png" style="width: 30px; height: 30px;" />
+        </div>  
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
